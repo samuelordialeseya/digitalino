@@ -1,0 +1,239 @@
+/* ============================================== */
+/* GLOBAL STYLES (Applied to the whole page) */
+/* ============================================== */
+
+/* Styles for the main body/canvas of the website */
+body {
+  font-family: 'Poppins', sans-serif; /* Sets the custom font */
+  background-color: #f2f2f2; /* Light gray background for the page */
+  margin: 0; /* Removes default browser margin */
+  padding: 0; /* Removes default browser padding */
+}
+
+/* ============================================== */
+/* HEADER & NAVIGATION STYLES */
+/* ============================================== */
+
+/* Styles for the main header bar at the top of the page */
+.site-header {
+  width: 100%; /* Header spans the full width of the screen */
+  background: #111; /* Dark gray/black background color */
+  color: #fff; /* White text color */
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.5em; /* Font size for the logo/site title */
+  font-weight: 700; /* Bold font weight for the logo */
+  padding: 21px 40px; /* Vertical (top/bottom) and horizontal (left/right) spacing */
+  box-sizing: border-box; /* Ensures padding is included in the total width/height */
+  letter-spacing: 1px; /* Adds slight spacing between letters */
+
+  /* Flexbox setup to arrange logo and navigation */
+  display: flex; 
+  justify-content: space-between; /* Pushes the logo (left) and navigation (right) to opposite ends */
+}
+
+/* Styles for the container holding the "Topics" and "About" links */
+.main-nav {
+  display: flex; /* Activates Flexbox to line up the links horizontally */
+  align-items: center; /* Vertically centers the links within the header */
+  gap: 40px; /* Adds 25px of space between the navigation links */
+  padding: 0px 20px; 
+}
+
+/* Styles for the actual navigation links (Topics and About) */
+.main-nav a {
+  color: white; 
+  text-decoration: none; /* Removes the default link underline */
+  font-size: 0.5em; /* Font size relative to the parent header font size */
+  font-weight: 400; /* Regular font weight */
+  padding-bottom: 2px; /* Small space below the links for visual alignment */
+}
+
+
+/* ============================================== */
+/* HERO IMAGE & ARTICLE TITLE STYLES */
+/* ============================================== */
+
+/* Styles for the large banner image container */
+.hero-image {
+  width: 100%; /* Full width */
+  height: 265px; /* Fixed height for the banner */
+  background: url('images/phishing.webp') center center no-repeat; /* Sets the image source and prevents repeating */
+  box-shadow: 1px 1px 24px rgba(0,0,0,0.3); /* Adds a soft, noticeable shadow */
+  margin-bottom: 0; 
+  
+  position: relative; /* Acts as the anchor for absolutely positioned children (if any) */
+
+  /* Flexbox setup to center the title text */
+  display: flex; 
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+    
+  background-size: cover; /* Ensures the background image covers the entire container */
+}
+
+/* Styles for the article title text overlayed on the hero image */
+.hero-title {
+  color: white; /* Title text color */
+  font-size: 2.75em; 
+  font-weight: 700;
+  
+  margin: 0; /* Removes default browser margin that could push the container */
+  
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Strong shadow for text readability over the image */
+}
+
+/* ============================================== */
+/* MAIN CONTENT LAYOUT (Article & Sidebar) */
+/* ============================================== */
+
+/* Main container that holds both the article and the author sidebar */
+.main-content {
+  display: flex; /* Activates Flexbox to lay out children side-by-side */
+  align-items: flex-start; /* Aligns the article and sidebar to the top */
+  max-width: 1050px; /* Maximum width of the entire content section */
+  margin: 40px auto 40px auto; /* Centers the container horizontally and adds vertical space */
+  background: #fff; /* White background for the content box */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 2px 2px 24px rgba(0,0,0,0.2); /* Shadow to lift the box off the background */
+  padding: 40px 32px; /* Inner spacing within the content box */
+  gap: 40px; /* Space between the author sidebar and the main article */
+}
+
+/* Styles for the author/sidebar information section */
+.author-info {
+  width: 220px; /* Fixed width for the sidebar */
+  background: #fff; 
+  padding: 24px 16px; 
+  border-radius: 12px; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06); /* Slight shadow for the sidebar */
+  text-align: center;
+  margin-left: 40px; 
+  margin-right: 32px;
+  display: flex;
+  flex-direction: column; /* Stacks items (photo and name) vertically */
+  align-items: center;
+}
+
+/* Styles for the author's profile picture */
+.author-photo {
+  width: 230px;
+  height: 230px;
+  object-fit: cover; /* Ensures image fills the area without distortion */
+  border-radius: 50%; /* Makes the image perfectly round */
+  margin-bottom: 12px;
+  
+}
+
+/* Styles for the author's name text */
+.author-name {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+/* ============================================== */
+/* ARTICLE CONTENT STYLES */
+/* ============================================== */
+
+/* Styles for the main article content area */
+.content-container {
+  flex: 1; /* Allows this element to grow and fill available space */
+  max-width: 700px; 
+  background: #fff;
+  padding: 24px 32px; 
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* Slight shadow for the container */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================== */
+/* EMBEDDED VIDEO STYLES (New) */
+/* ============================================== */
+
+.video-container {
+  /* This creates a container that forces a 16:9 ratio */
+  position: relative; /* Anchor for the absolute iframe */
+  padding-bottom: 56.25%; /* 56.25% is (9 / 16) * 100, which is the 16:9 ratio */
+  height: 0;
+  overflow: hidden; /* Hides anything that falls outside the ratio box */
+  margin: 24px 0; /* Matches the spacing of the old image */
+  border-radius: 8px; /* Optional: adds rounded corners to the video */
+}
+
+.video-container iframe {
+  /* Forces the video to fill the 16:9 ratio container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styles for headings within the article content (h1, h2, etc.) */
+.content-container h1 {
+  font-size: 2.2em;
+  margin-top: 0; 
+  margin-bottom: 24px;
+  color: #222;
+}
+
+/* Styles for standard paragraphs within the article */
+.content-container p {
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.7; /* Increased line height for better readability */
+}
+
+/* Styles for images that appear within the article content */
+.content-container .article-image {
+  width: 100%; /* Image takes up the full width of the article container */
+  border-radius: 8px;
+  margin: 24px 0;
+  height: auto; 
+}
+
+/* Styles for links like the "Back to Topics" button */
+.content-container a {
+  display: inline-block;
+  margin-top: 32px;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ============================================== */
+/* RESPONSIVENESS (Mobile View) */
+/* ============================================== */
+
+/* Styles applied when the screen width is 900 pixels or less */
+@media (max-width: 900px) {
+  /* Changes the main content layout from side-by-side to stacked (column) */
+  .main-content {
+    flex-direction: column;
+    padding: 24px 8px;
+    gap: 24px;
+  }
+  /* Centers the author sidebar when the layout is stacked */
+  .author-info {
+    margin: 0 auto;
+  }
+  /* Allows the article content to take up the full available width */
+  .content-container {
+    max-width: 100%;
+  }
+}
+
+/* ============================================== */
+/* UNUSED / HIDDEN STYLES */
+/* ============================================== */
+
+/* This section is defined but currently hidden (display: none) */
+.title-section {
+  /* background-image: url('images/phishing.webp'); - This style is moved to .hero-image */
+  display: none; 
+}
+
+
