@@ -1,1 +1,244 @@
 
+/* GENERAL THEME */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+.site-header {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 21px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  position: sticky;
+}
+
+.main-nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  color: #3a8bd8;
+}
+
+/*INTRODUCTION*/
+.welcome h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 45px;
+}
+
+.welcome p {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+
+/* WITTY QUESTION LANDING PAGE */
+.witty-question {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: #e6f0fa;
+    overflow: hidden;
+}
+
+.landing-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.landing-text {
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 40%;
+}
+
+/*BUTTONS*/
+.landing-text h1 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+}
+
+.landing-text span {
+    color: #cfe4ff;
+}
+
+.landing-text button {
+    font-weight: 540;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #3a8bd8;
+    border: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.landing-text button:hover {
+    transform: scale(1.20);
+}
+
+/*GENERAL THEME FOR FLIPBOXES*/
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*CONTAINER FOR FLIPBOXES*/
+.flipbox-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom:40px;
+  cursor: pointer;
+}
+
+/*LEFT FLIPBOX*/
+.flip-box {
+  background-color: transparent;
+  width: 45%;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flipbox-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hint {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #333;
+  opacity: 0.7;
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #cfe4ff;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-box-back {
+  background-color: white;
+  color: black;
+  transform: rotateX(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/*RIGHT FLIPBOX*/
+.flip-boxes {
+  background-color: transparent;
+  width: 45%;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-box-inners {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-boxes:hover .flip-box-inners {
+  transform: rotateX(180deg);
+}
+
+.flip-box-fronts, .flip-box-backs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-fronts {
+  background-color: #cfe4ff;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-box-backs {
+  background-color: white;
+  color: black;
+  transform: rotateX(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/*BREAK LINES*/
+hr {
+    background-color: #2B547E;
+    border-style: inset;
+    height: 1.5px;
+    width: 1000px;
+}
+
