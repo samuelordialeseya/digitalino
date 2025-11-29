@@ -1,58 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ADDED FOR RESPONSIVENESS -->
+  
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
   <title>DigiTALINO – Empowering Smart and Responsible Netizens</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
   <header class="site-header">
       <div class="logo">DigiTALINO</div>
       <nav class="main-nav">
         <a href="index.html">Topics</a>
         <a href="ABOUT US/HTML-about-us.html">About us</a>
-        </nav>
+      </nav>
   </header>
 
-<!--WITTY QUESTION LANDING PAGE-->
+  <!--WITTY QUESTION LANDING PAGE-->
   <section class="witty-question fade-in">
-      <img src="https://onlinedegrees.sandiego.edu/wp-content/uploads/2016/09/cyber-security-threats.jpeg" class="landing-img">
+      <img src="https://onlinedegrees.sandiego.edu/wp-content/uploads/2016/09/cyber-security-threats.jpeg" 
+           class="landing-img" 
+           alt="Cyber safety awareness image"> <!-- ADDED alt TEXT -->
+
       <div class="landing-text slide-up">
-          <h1>A STRANGER<br><span>wants to meet up, promising a REAL puppy.<br>WHAT DO YOU DO?</span></h1>
+          <h1>A STRANGER<br>
+            <span>wants to meet up, promising you a BRAND NEW CAR!<br>WHAT DO YOU DO?</span>
+          </h1>
+
           <button class="btn-animate">Say NO and tell a trusted adult!</button>
           <button class="btn-animate">Say YES and go anyways!</button>
       </div>
   </section>
 
-<!--INTRODUCTION-->
-<div class="welcome">
-    <h1>(check emoji)Identity Verified — Welcome to DigiTALINO!</h1>
-    <p>Have you ever clicked a suspicious link and suddenly you can't access your accounts? You were <b>HACKED</b> Have you ever been called through your phone number by some person calling that your card has "something wrong in it" and asked for your personal card information, which you willingoy gave? You were <b>SCAMMED</b>. But worry not because DigiTALINO is here to provide you information and assist you on how to properly identify which is true and which is fake.</p>
-    <p class="onespacebig">
-        <i>"Cybercrime has grown into a thriving, highly profitable industry, threatening governments, businesses and people worldwide. With two-thirds of the world’s population online – and much of the global economy reliant on information and communications technology – everyone is a viable target".</i> <a href= "https://www.unodc.org/unodc/frontpage/2025/October/what-to-know-about-cybercrime-in-2025.html" > <i>(United Nations, 2025)</i></a>
-    </p>
+  <!--INTRODUCTION-->
+  <div class="welcome">
+    <h1>Identity Verified — Welcome to DigiTALINO!</h1> <!-- REMOVED “(check emoji)” since browsers show it differently -->
     
-</div>
+    <p>
+      Have you ever clicked a suspicious link and suddenly you can't access your accounts? 
+      You were <b>HACKED</b>. Have you ever been called through your phone number by some person 
+      saying your card has "something wrong in it" and asked for your personal card information, 
+      which you willingly gave? You were <b>SCAMMED</b>. But worry not because DigiTALINO is here 
+      to provide you information and assist you on how to properly identify which is true and which is fake.
+    </p>
 
-<hr>
-    <!-- FLIPBOX CONTAINER -->
-    <div class="flipbox-container">
+    <p class="onespacebig">
+      <i>
+        "Cybercrime has grown into a thriving, highly profitable industry, threatening governments, 
+        businesses and people worldwide. With two-thirds of the world’s population online – and much 
+        of the global economy reliant on information and communications technology – everyone is a 
+        viable target".
+      </i>
+      <a href="https://www.unodc.org/unodc/frontpage/2025/October/what-to-know-about-cybercrime-in-2025.html">
+        <i>(United Nations, 2025)</i>
+      </a>
+    </p>
+  </div>
 
-        <!--LEFT FLIPBOX-->
-        <div class="flip-box">
-            <div class="flip-box-inner">
-                <div class="flip-box-front">
-                    <div class="flipbox-title">
-                        <h1>WHAT IS DigiTALINO?</h1>
-                        <small class="hint">(h)over here!</small>
-                    </div>
-                </div>
-                    <div class="flip-box-back">
-                        <p>DigiTALINO is a user-friendly website that teaches people how to acquire critical digital literacy skills and strong cyber-safety behaviors. It offers clear, practical guidance on how to recognize online threats, keep oneself safe, and use technology sensibly. DigiTALINO uses interactive technology and user-friendly courses to teach individuals of all ages how to confidently navigate the digital world. DigiTALINO is a dependable partner on your digital adventure, regardless of your degree of expertise.</p>
-                    </div>
+  <hr>
+  
+  <!--TITLE QUESTION FOR FLIPBOXES-->
+  <div class="questions">
+      <h1>Questions! Questions!</h1>
+  </div>
+
+  <!-- FLIPBOX CONTAINER -->
+  <div class="flipbox-container">
+
+    <!--LEFT FLIPBOX-->
+    <div class="flip-box">
+        <div class="flip-box-inner">
+            <div class="flip-box-front">
+                <div class="flipbox-title">
+                    <h1>WHAT IS DigiTALINO?</h1>
+                    <small class="hint">(h)over here!</small>
                 </div>
             </div>
+
+            <div class="flip-box-back">
+                <p>
+                  DigiTALINO is a user-friendly website that teaches people how to acquire 
+                  critical digital literacy skills and strong cyber-safety behaviors. It offers clear, 
+                  practical guidance on how to recognize online threats, keep oneself safe, and use 
+                  technology sensibly. DigiTALINO uses interactive technology and user-friendly 
+                  courses to teach individuals of all ages how to confidently navigate the digital world. 
+                  DigiTALINO is a dependable partner on your digital adventure, regardless of your 
+                  degree of expertise.
+                </p>
+            </div>
+        </div>
+    </div>
 
     <!--RIGHT FLIPBOX-->
     <div class="flip-box">
@@ -60,17 +100,24 @@
             <div class="flip-box-front">
                 <h1>DO YOU THINK YOU HAVE DIGITAL LITERACY?</h1>
             </div>
-                <div class="flip-box-back">
-                    <p>If your answer is no, then it's okay! Welcome to our page and come with us to broaden your knowledge in digital literacy. If you are already literate, then let's nourish your knowledge further.  Enjoy on exploring and navigating through every page. And the creators hope that through every scroll, your knowledge flourishes.</p>
-                </div>
+
+            <div class="flip-box-back">
+                <p>
+                  If your answer is no, then it's okay! Welcome to our page and come with us 
+                  To broaden your knowledge in digital literacy. There is absolutely no shame in knowing little to no information! We all start from scratch. What matters is that you're starting your journey on a good foot in the right place. If you are already literate, 
+                  then let's nourish your knowledge further. Enjoy exploring and navigating 
+                  through every page. The creators hope that through every scroll, your 
+                  knowledge flourishes.
+                </p>
             </div>
         </div>
     </div>
-    <hr> <!--LINE BREAK-->
 
-<!--TOPICS-->
+  </div>
 
-    
+  <hr>
+
+  <!--TOPICS (empty for now)-->
+
 </body>
 </html>
-
