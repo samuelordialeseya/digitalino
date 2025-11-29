@@ -135,10 +135,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 40px;
-  padding-right: 40px
+  padding-right: 40px;
   cursor: pointer;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 20px;
 }
 
 /*LEFT FLIPBOX*/
@@ -183,6 +184,7 @@ body {
   overflow-wrap: break-word;
   overflow-y: auto;
   backface-visibility: hidden;
+  border-radius: 15px;
 }
 
 .flip-box-front {
@@ -234,6 +236,7 @@ body {
   overflow-wrap: break-word;
   overflow-y: auto;
   backface-visibility: hidden;
+  border-radius: 15px;
 }
 
 .flip-box-fronts {
