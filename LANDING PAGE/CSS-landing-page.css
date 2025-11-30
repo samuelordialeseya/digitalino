@@ -44,6 +44,19 @@ hr, .custom-hr {
   color: #3a8bd8;
 }
 
+/* SCHOOL LOGO NEXT TO TITLE */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between logo and DigiTALINO */
+}
+
+.school-logo {
+  height: 45px;   /* adjust logo size */
+  width: auto;
+  object-fit: contain;
+}
+
 /* INTRODUCTION */
 .welcome h1 {
   text-align: center;
