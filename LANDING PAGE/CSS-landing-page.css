@@ -123,13 +123,14 @@ hr, .custom-hr {
   font-weight: 540;
   font-family: 'Poppins', sans-serif;
   margin-top: 20px;
+  margin-right: 20px;
   padding: 15px 15px;
   background: #3a8bd8;
   border: none;
   color: white;
   cursor: pointer;
   border-radius: 5px;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .landing-text button:hover {
@@ -327,7 +328,7 @@ hr, .custom-hr {
   border-radius: 18px;
 }
 
-/* IMAGERY */
+/*IMAGERY*/
 .column img {
   width: 100%;
   display: block;
@@ -341,7 +342,7 @@ hr, .custom-hr {
   transform: scale(1.03);
 }
 
-/* OVERLAY */
+/*OVERLAY*/
 .overlay {
   position: absolute;
   inset: 0;
@@ -355,7 +356,7 @@ hr, .custom-hr {
   opacity: 1;
 }
 
-/* OVERLAY CONTENT */
+/*OVERLAY CONTENT*/
 .overlay-content {
   position: absolute;
   top: 50%;
