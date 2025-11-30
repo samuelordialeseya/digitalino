@@ -66,19 +66,20 @@ hr, .custom-hr {
 
 
 /* INTRODUCTION */
-.welcome h1 {
-  text-align: center;
-  margin-top: 30px;
-  font-size: clamp(28px, 4vw, 45px);
+
+.main-content {
+  max-width: 1050px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 2px 2px 24px rgba(0,0,0,0.2);
+  padding: 40px 32px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.6;
+  color: black;
 }
 
-.welcome p {
-  font-size: clamp(16px, 2vw, 20px);
-  padding: 0 50px;
-  text-indent: 50px;
-  text-align: justify;
-  overflow-wrap: break-word;
-}
 
 /* WITTY QUESTION LANDING PAGE */
 .witty-question {
