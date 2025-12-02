@@ -62,7 +62,7 @@ body {
 .hero-image {
   width: 100%; /* Full width */
   height: 265px; /* Fixed height for the banner */
-  background: url('cyberthreat.jpg') center center no-repeat; /* Sets the image source and prevents repeating */
+  background: url('topic2hero.png') center center no-repeat; /* Sets the image source and prevents repeating */
   box-shadow: 1px 1px 24px rgba(0,0,0,0.3); /* Adds a soft, noticeable shadow */
   margin-bottom: 0; 
   
