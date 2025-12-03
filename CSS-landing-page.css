@@ -1,0 +1,623 @@
+/* ============================================== */
+/* 1. BASE & TYPOGRAPHY */
+/* ============================================== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+/* ============================================== */
+/* 2. UTILITIES & BREAK LINES */
+/* ============================================== */
+hr, .custom-hr {
+  background-color: #2B547E;
+  border-style: inset;
+  height: 1.5px;
+  width: auto;
+}
+
+
+/* ============================================== */
+/* 3. HEADER & NAVIGATION */
+/* ============================================== */
+
+/* Main header bar */
+.site-header {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.5em; 
+  font-weight: 700;
+  padding: 21px 40px; 
+  box-sizing: border-box; 
+  letter-spacing: 1px; 
+  display: flex; 
+  justify-content: space-between;
+  padding: 5px 40px;
+}
+
+/* Logo and Text container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Standardized spacing */
+}
+
+.school-logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text-image {
+  height: 75px; 
+  width: 180x;
+  object-fit: contain;
+  /* Add this if it appears too high or too low */
+  vertical-align: middle; 
+}
+
+/* Navigation links container */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 20px; 
+}
+
+/* Navigation link styles */
+.main-nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+  font-weight: 200;
+}
+
+.main-nav a:hover {
+  color: #8d2bb7; /* Hover color for consistency */
+}
+
+
+/* ============================================== */
+/* 4. LANDING PAGE / HERO SECTION */
+/* ============================================== */
+.witty-question {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: #e6f0fa;
+  overflow: hidden;
+}
+
+.decorative-image-container {
+    position: absolute; /* Allows precise positioning relative to the body/viewport */
+    top: 150px; /* Adjust this: 150px puts it slightly below the header */
+    left: 40px; /* Adjust this: 40px aligns it with the main content/header padding */
+    z-index: 10; /* Ensures it sits above any other content */
+}
+
+.decorative-image {
+    width: 700px; /* Adjust the size of the image as needed */
+    height: auto;
+    margin-left: 35px;
+    margin-top: 15px;
+    /* Optional: Add a slight rotation for visual effect */
+
+  /* NEW: Apply the animation */
+    animation: fadeIn 0.8s ease-out 0.2s forwards; /* 0.2s delay */
+    opacity: 0; /* Start invisible for the animation */  
+ 
+}
+
+.landing-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.landing-text {
+  position: absolute;
+  top: 45%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 40%;
+  max-width: 500px;
+}
+
+.landing-text h1 {
+  font-size: clamp(22px, 4vw, 38px);
+  font-weight: bold;
+  line-height: 1.2;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.landing-text span {
+  color: #cfe4ff;
+}
+
+/* Landing Page Buttons */
+.landing-text button {
+  font-weight: 540;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 15px 15px;
+  background: #9332a2;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.landing-text button:hover {
+  transform: scale(1.20);
+}
+
+
+/* ============================================== */
+/* 5. INTRODUCTION & MAIN CONTENT */
+/* ============================================== */
+.main-content {
+  max-width: 1050px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 2px 2px 24px rgba(0,0,0,0.4);
+  padding: 40px 32px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.6;
+  color: black;
+}
+
+/* ============================================== */
+/* 6. FAQ & FLIPBOXES - FIXED */
+/* ============================================== */
+.questions h1 {
+  text-align: center;
+  font-size: clamp(28px, 4vw, 45px);
+}
+
+.flipbox-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 45%; /* Increased to give more space for two cards */
+  min-width: 300px;
+  height: 280px;
+  perspective: 1000px; /* Required for the 3D flip effect */
+}
+
+/* Inner container controls the flip rotation */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* --- FIX: Changed rotation from X-axis to Y-axis for horizontal flip --- */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg); 
+}
+
+.flipbox-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hint {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #333;
+  opacity: 0.7;
+}
+
+/* Front and back faces */
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  backface-visibility: hidden; /* Crucial: Hides the back side of the card when facing away */
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Front Face Styling */
+.flip-box-front {
+  background-color: #c96be3; /* Consolidated the conflicting background rules here */
+  color: black;
+}
+
+/* Back Face Styling */
+/* --- FIX: Changed rotation from X-axis to Y-axis for horizontal flip --- */
+.flip-box-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg); /* This starts the back face already flipped */
+  font-size: 15px;
+
+}
+
+
+/* ============================================== */
+/* 7. TOPICS SECTION (Cards) - MODERN NUMBERED ROADMAP */
+/* ============================================== */
+
+/* Titles and Descriptions */
+.section-title {
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.topics-description p {
+  font-size: 20px;
+  text-align: center;
+  margin: 5px 0 25px;
+  padding: 0 20px;
+  color: #555;
+}
+
+/* Roadmap Container (The Row) */
+.roadmap-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between cards */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  flex-wrap: wrap; 
+}
+
+/* Individual Card */
+.roadmap-card {
+  position: relative;
+  flex: 0 1 200px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  text-decoration: none; 
+  color: inherit;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* The Large Number */
+.card-number {
+    font-size: 4em;
+    font-weight: 800;
+    color: #9332a2; /* Primary color */
+    margin: 15px 0 0;
+    line-height: 1;
+}
+
+/* Card Imagery */
+.roadmap-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(80%);
+  transition: filter 0.3s;
+}
+
+.roadmap-card:hover img {
+    filter: grayscale(0%);
+}
+
+/* Card Text Content */
+.card-content {
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.card-content h3 {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #222;
+}
+
+.card-content p {
+    font-size: 0.85em;
+    color: #666;
+    margin: 0;
+}
+
+/* Connecting Dashed Line (for visual road map) */
+.roadmap-card:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 50%; 
+    right: -40px; 
+    transform: translateY(-50%);
+    width: 40px;
+    height: 1px;
+    border-bottom: 3px dashed #ccc;
+    display: none; 
+}
+
+/* Show the line on larger screens */
+@media (min-width: 950px) {
+    .roadmap-card:not(:last-child)::after {
+        display: block;
+    }
+    .roadmap-card {
+        flex: 0 1 200px;
+    }
+}
+
+/* Mobile Responsiveness for Cards (stacks vertically) */
+@media (max-width: 768px) {
+    .roadmap-row {
+        gap: 20px;
+        flex-direction: column; 
+        align-items: center;
+    }
+    .roadmap-card {
+        width: 85%;
+        max-width: 350px;
+        flex: 1 1 100%;
+        display: flex;
+        flex-direction: row; /* Layout content horizontally on mobile */
+        text-align: left;
+        padding-bottom: 0;
+    }
+    .card-number {
+        font-size: 2em;
+        padding: 20px 10px 0 20px;
+        margin: 0;
+    }
+    .roadmap-card img {
+        display: none; /* Hide image on mobile for simplicity */
+    }
+    .card-content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .roadmap-card:not(:last-child)::after {
+        content: '';
+        /* Vertical line for stacked cards */
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 20px; /* Space between cards */
+        border-right: 3px dashed #ccc;
+        border-bottom: none;
+        display: block;
+    }
+    /* Hide vertical line on the last card */
+    .roadmap-card:last-child::after {
+        display: none;
+    }
+}
+
+/* --- SIMPLE BUTTON TO ALL TOPICS PAGE - CORRECTLY CENTERED --- */
+.topics-page-link-container {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 65px;
+}
+
+.simple-topics-btn {
+    display: block; /* Important for centering with margin: auto */
+    width: fit-content; 
+    margin: 0 auto; /* Centers the block element horizontally */
+    
+    padding: 10px 25px;
+    background: transparent;
+    color: #9332a2;
+    border: 2px solid #9332a2;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+    letter-spacing: 0;
+}
+
+.simple-topics-btn:hover {
+    background: #9332a2;
+    color: #fff;
+}
+
+
+
+/* ============================================== */
+/* 8. FOOTER STYLES */
+/* ============================================== */
+
+/* Main Footer Container */
+.site-footer-dark {
+    background-color: #1a1a1a; 
+    color: #f2f2f2;
+    padding: 30px 60px 20px 60px;
+    margin-top: 50px; 
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Branding Section (Logo, Slogan, Partner Logos) */
+.footer-brand-section {
+    margin-bottom: 25px;
+}
+
+.footer-logo-img {
+    height: 100px; /* Adjust height to make the logo prominent */
+    width: auto;
+    object-fit: contain;
+    
+}
+
+.footer-tagline {
+    color: #aaa;
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+/* Partner Logo Container & Styling */
+.footer-logos {
+    display: flex;
+    gap: 70px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.partner-logo {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #777; 
+    object-fit: cover;
+}
+
+/* Simple Navigation Row */
+.footer-simple-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.footer-simple-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin: 0 20px; 
+    padding: 5px 0;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.footer-simple-nav a:hover {
+    color: #9332a2; 
+}
+
+/* Footer Divider Line */
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: #444; 
+    margin: 20px 0; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Bottom Row (Social Icons & Copyright) */
+.footer-bottom-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #777;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.footer-copyright {
+    color: #777;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+
+/* ============================================== */
+/* 9. MEDIA QUERIES (Responsiveness) */
+/* ============================================== */
+@media (max-width: 900px) {
+  .landing-text {
+    left: 50%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 700px) {
+  .flip-box,
+  .flip-boxes {
+    width: 100%;
+    height: auto;
+  }
+
+  .flip-box-front,
+  .flip-box-back,
+  .flip-box-fronts,
+  .flip-box-backs {
+    height: auto;
+  }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateZ(0) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0) scale(1);
+    }
+}

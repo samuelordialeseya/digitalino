@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
 /* ============================================== */
 /* GLOBAL STYLES (Applied to the whole page) */
 /* ============================================== */
@@ -8,44 +11,192 @@ body {
   background-color: #f2f2f2; /* Light gray background for the page */
   margin: 0; /* Removes default browser margin */
   padding: 0; /* Removes default browser padding */
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* ============================================== */
-/* HEADER & NAVIGATION STYLES */
+/* 3. HEADER & NAVIGATION */
 /* ============================================== */
 
-/* Styles for the main header bar at the top of the page */
+/* Main header bar */
 .site-header {
-  width: 100%; /* Header spans the full width of the screen */
-  background: #111; /* Dark gray/black background color */
-  color: #fff; /* White text color */
+  width: 100%;
+  background: #111;
+  color: #fff;
   font-family: 'Poppins', sans-serif; 
-  font-size: 1.5em; /* Font size for the logo/site title */
-  font-weight: 700; /* Bold font weight for the logo */
-  padding: 21px 40px; /* Vertical (top/bottom) and horizontal (left/right) spacing */
-  box-sizing: border-box; /* Ensures padding is included in the total width/height */
-  letter-spacing: 1px; /* Adds slight spacing between letters */
-
-  /* Flexbox setup to arrange logo and navigation */
+  font-size: 1.5em; 
+  font-weight: 700;
+  padding: 21px 40px; 
+  box-sizing: border-box; 
+  letter-spacing: 1px; 
   display: flex; 
-  justify-content: space-between; /* Pushes the logo (left) and navigation (right) to opposite ends */
+  justify-content: space-between;
+  padding: 5px 40px;
 }
 
-/* Styles for the container holding the "Topics" and "About" links */
+/* Logo and Text container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Standardized spacing */
+}
+
+.school-logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text-image {
+  height: 75px; 
+  width: 180x;
+  object-fit: contain;
+  /* Add this if it appears too high or too low */
+  vertical-align: middle; 
+}
+
+/* Navigation links container */
 .main-nav {
-  display: flex; /* Activates Flexbox to line up the links horizontally */
-  align-items: center; /* Vertically centers the links within the header */
-  gap: 40px; /* Adds 25px of space between the navigation links */
+  display: flex;
+  align-items: center;
+  gap: 40px;
   padding: 0px 20px; 
 }
 
-/* Styles for the actual navigation links (Topics and About) */
+/* Navigation link styles */
 .main-nav a {
-  color: white; 
-  text-decoration: none; /* Removes the default link underline */
-  font-size: 0.5em; /* Font size relative to the parent header font size */
-  font-weight: 400; /* Regular font weight */
-  padding-bottom: 2px; /* Small space below the links for visual alignment */
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+  font-weight: 200;
+}
+
+.main-nav a:hover {
+  color: #8d2bb7; /* Hover color for consistency */
+}
+
+
+/* ============================================== */
+/* 8. FOOTER STYLES */
+/* ============================================== */
+
+/* Main Footer Container */
+.site-footer-dark {
+    background-color: #1a1a1a; 
+    color: #f2f2f2;
+    padding: 30px 60px 20px 60px;
+    margin-top: 50px; 
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Branding Section (Logo, Slogan, Partner Logos) */
+.footer-brand-section {
+    display: flex;
+    flex-direction: column; /* This ensures elements stack vertically */
+    align-items: center;    /* This centers the elements (logo, tagline, partner logos) horizontally */
+    margin-bottom: 25px;
+}
+
+.footer-logo-img {
+    height: 100px; 
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 5px; 
+}
+
+.footer-tagline {
+    color: #aaa;
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+/* Partner Logo Container & Styling */
+.footer-logos {
+    display: flex;
+    gap: 70px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.partner-logo {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #777; 
+    object-fit: cover;
+}
+
+/* Simple Navigation Row */
+.footer-simple-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.footer-simple-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin: 0 20px; 
+    padding: 5px 0;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.footer-simple-nav a:hover {
+    color: #8d2bb7; 
+}
+
+/* Footer Divider Line */
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: #444; 
+    margin: 20px 0; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Bottom Row (Social Icons & Copyright) */
+.footer-bottom-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #777;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.footer-copyright {
+    color: #777;
+    font-size: 0.85em;
+    text-align: center;
 }
 
 
@@ -57,7 +208,6 @@ body {
 .hero-image {
   width: 100%; /* Full width */
   height: 265px; /* Fixed height for the banner */
-  background: url('images/phishing.webp') center center no-repeat; /* Sets the image source and prevents repeating */
   box-shadow: 1px 1px 24px rgba(0,0,0,0.3); /* Adds a soft, noticeable shadow */
   margin-bottom: 0; 
   
@@ -174,7 +324,7 @@ body {
 
 /* Styles for headings within the article content (h1, h2, etc.) */
 .content-container h1 {
-  font-size: 2.2em;
+  font-size: 2em;
   margin-top: 0; 
   margin-bottom: 24px;
   color: #222;
@@ -185,6 +335,9 @@ body {
   font-size: 1.1em;
   color: #444;
   line-height: 1.7; /* Increased line height for better readability */
+  margin-bottom: 70px;
+  line-height: 1.65;
+
 }
 
 /* Styles for images that appear within the article content */
@@ -199,7 +352,7 @@ body {
 .content-container a {
   display: inline-block;
   margin-top: 32px;
-  color: #0077cc;
+  color: #8d2bb7;
   text-decoration: none;
   font-weight: 600;
 }
@@ -226,14 +379,125 @@ body {
   }
 }
 
-/* ============================================== */
-/* UNUSED / HIDDEN STYLES */
-/* ============================================== */
 
-/* This section is defined but currently hidden (display: none) */
-.title-section {
-  /* background-image: url('images/phishing.webp'); - This style is moved to .hero-image */
-  display: none; 
+
+.main-nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
 }
 
+.main-nav a:hover {
+  color: #8d2bb7;
+}
 
+/*LOGO + TITLE SIDE-BY-SIDE*/
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.school-logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 1em;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.page {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+  position: relative;
+}
+
+/* RIGHT SIDE */
+.right-section {
+  max-width: 770px;
+  margin-left: auto;
+  z-index: 5;
+}
+
+.content {
+  font-size: 39px;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.contentp2 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: white;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+/* TOPIC CARDS BELOW DESCRIPTION */
+.topics-boxes1 {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.topics-boxes2 {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.topic-container {
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  transition: .2s;
+  flex: 1 1 calc(50% - 20px);    
+  min-width: 340px;              
+  max-width: 220px;
+  text-align: center;
+}
+
+.topicnumber {
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.topic-container:hover {
+  transform: scale(1.05);
+}
+
+.topic-container img {
+  width: 330px;
+  border-radius: 10px;
+}
+
+.big-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 110%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-size: cover; 
+  
+ 
+  
+}

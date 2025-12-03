@@ -1,0 +1,276 @@
+/* GENERAL THEME */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #80EF80;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* ============================================== */
+/* 3. HEADER & NAVIGATION */
+/* ============================================== */
+
+/* Main header bar */
+.site-header {
+  width: 100%;
+  background: #111;
+  color: #fff;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1.5em; 
+  font-weight: 700;
+  padding: 21px 40px; 
+  box-sizing: border-box; 
+  letter-spacing: 1px; 
+  display: flex; 
+  justify-content: space-between;
+  padding: 5px 40px;
+}
+
+/* Logo and Text container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Standardized spacing */
+}
+
+.school-logo {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text-image {
+  height: 75px; 
+  width: 180x;
+  object-fit: contain;
+  /* Add this if it appears too high or too low */
+  vertical-align: middle; 
+}
+
+/* Navigation links container */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 0px 20px; 
+}
+
+/* Navigation link styles */
+.main-nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+  font-weight: 200;
+}
+
+.main-nav a:hover {
+  color: #8d2bb7; /* Hover color for consistency */
+}
+
+/* ============================================== */
+/* 8. FOOTER STYLES */
+/* ============================================== */
+
+/* Main Footer Container */
+.site-footer-dark {
+    background-color: #1a1a1a; 
+    color: #f2f2f2;
+    padding: 30px 60px 20px 60px;
+    margin-top: 50px; 
+    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Branding Section (Logo, Slogan, Partner Logos) */
+.footer-brand-section {
+    margin-bottom: 25px;
+}
+
+.footer-logo-img {
+    height: 100px; /* Adjust height to make the logo prominent */
+    width: auto;
+    object-fit: contain;
+    
+}
+
+.footer-tagline {
+    color: #aaa;
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+/* Partner Logo Container & Styling */
+.footer-logos {
+    display: flex;
+    gap: 70px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.partner-logo {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #777; 
+    object-fit: cover;
+}
+
+/* Simple Navigation Row */
+.footer-simple-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.footer-simple-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-weight: 600;
+    margin: 0 20px; 
+    padding: 5px 0;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.footer-simple-nav a:hover {
+    color: #9332a2; 
+}
+
+/* Footer Divider Line */
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: #444; 
+    margin: 20px 0; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Bottom Row (Social Icons & Copyright) */
+.footer-bottom-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    margin: 0 5px;
+    color: #777;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.footer-copyright {
+    color: #777;
+    font-size: 0.85em;
+    text-align: center;
+}
+
+/* HERO IMAGE */
+.hero-image {
+  width: 100%; 
+  height: 800px;
+  background: url('https://lifesmartyouth.org/wp-content/uploads/2021/09/LSY-TrustedAdults-0921-Suicide-Prevention-1024x683.jpg') center center no-repeat;
+  box-shadow: 1px 1px 24px rgba(0,0,0,0.3);
+  margin-bottom: 0; 
+  position: relative;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-size: cover;
+}
+
+.hero-title {
+  color: white;
+  font-size: 50px; 
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.no h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/*EXPLANATION1*/
+.explanation p {
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+}
+
+/*MAIN*/
+
+.main-content {
+  max-width: 1050px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 2px 2px 24px rgba(0,0,0,0.2);
+  padding: 40px 32px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: black;
+}
+
+.main-content h2 {
+    text-align: center;
+}
+
+/*EXPLANATION2*/
+.explanation2 p {
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 25px;
+}
+
+/* BUTTONS */
+.button button {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 15px;
+  background: #198450;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.button button:hover {
+  transform: scale(1.20);
+}
+
+.button {
+  text-align: center;
+}
